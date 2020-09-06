@@ -70,5 +70,7 @@ class TicTacToeGame():
 
   def print_result(self):
     # TODO: Implement this function in order to print the result based on the self.winner
-
-    pass
+    if self.winner is None:
+      print("It was a draw, better luck next time")
+    else:
+      print("%s is the winner" %self.winner)
