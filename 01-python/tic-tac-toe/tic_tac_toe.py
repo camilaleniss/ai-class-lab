@@ -52,11 +52,8 @@ class TicTacToeGame():
   def machine_turn(self):
     # TODO: Implement this function to make the machine choose a random cell (use random module)
     # The result of this function should be that self.board now has one more random cell occupied
-
-    for i, cell in enumerate(self.board):
-      if cell is None:
-        self.board[i] = _MACHINE_SYMBOL
-        break
+    random_cell = random.choice([x for x in range(len(self.board)) if self.board[x] is None])
+    self.board[random_cell] = _MACHINE_SYMBOL
 
   def format_board(self):
     # TODO: Implement this function, it must be able to print the board in the following format:
