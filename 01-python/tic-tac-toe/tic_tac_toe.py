@@ -1,4 +1,5 @@
 import re
+import random
 
 _PLAYER = "player"
 _MACHINE = "machine"
